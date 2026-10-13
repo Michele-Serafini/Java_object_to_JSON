@@ -1,0 +1,20 @@
+# Gradle
+.gradle/
+build/
+
+# IntelliJ Platform Gradle Plugin
+.intellijPlatform/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Run configurations and sandbox files
+.run/
+
+# Generated JSON files
+JSON/
+
+# Operating system files
+.DS_Store
+Thumbs.db
