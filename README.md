@@ -4,7 +4,7 @@ Plugin IntelliJ IDEA che permette di esportare in formato JSON il valore runtime
 
 # Funzionalità
 
-legge una variabile Java dal debugger, recupera i valori reali presenti nella JVM e attraversa ricorsivamente gli oggetti annidati per generare un file JSON formattato, salvato nella cartella JSON del progetto.
+Legge una variabile Java dal debugger, recupera i valori reali presenti nella JVM e attraversa ricorsivamente gli oggetti annidati per generare un file JSON formattato, salvato nella cartella JSON del progetto.
 
 # Utilizzo
 1) Posiziona un breakpoint dopo che l'oggetto è stato valorizzato.
