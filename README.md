@@ -13,20 +13,7 @@ Legge una variabile Java dal debugger, recupera i valori reali presenti nella JV
 4) Click destro nell'editor.
 5) Seleziona: Export Object to JSON
 
-# Struttura del progetto
-src/
-└── main/
-    ├── java/
-    │   └── pluginjson/
-    │       ├── ExportRuntimeFromEditorAction.java
-    │       └── scanner/
-    │           ├── RuntimeScannerService.java
-    │           └── JsonExporterService.java
-    │
-    └── resources/
-        └── META-INF/
-            ├── plugin.xml
-            └── pluginIcon.svg
+
 # Build
 Compilazione:
 
