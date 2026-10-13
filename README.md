@@ -1,27 +1,27 @@
 # Runtime Object to JSON
 
-Plugin IntelliJ IDEA che permette di esportare in formato JSON il valore runtime di una variabile Java mentre l'applicazione è ferma nel debugger.
+An IntelliJ IDEA plugin that exports the runtime value of a Java variable to JSON while the application is paused in the debugger.
 
-# Funzionalità
+# Features
 
-Legge una variabile Java dal debugger, recupera i valori reali presenti nella JVM e attraversa ricorsivamente gli oggetti annidati per generare un file JSON formattato, salvato nella cartella JSON del progetto.
+Reads a Java variable from the debugger, retrieves the actual values stored in the JVM, and recursively traverses nested objects to generate a formatted JSON file, which is saved in the project's JSON folder.
 
-# Utilizzo
-1) Posiziona un breakpoint dopo che l'oggetto è stato valorizzato.
-2) Avvia l'applicazione in modalità Debug.
-3) Posiziona il cursore sopra una variabile Java oppure selezionala.
-4) Click destro nell'editor.
-5) Seleziona: Export Object to JSON
+# USage
+1) Place a breakpoint after the object has been initialized.
+2) Start the application in Debug mode.
+3) Place the cursor over a Java variable or select it.
+4) Right-click in the editor.
+5) Select Export Object to JSON.
 
 
 # Build
-Compilazione:
+Compile the plugin:
 
 .\gradlew.bat clean build
-Avvio IDE sandbox:
+Launch the IDE Sandbox:
 
 .\gradlew.bat runIde
-Creazione ZIP distribuibile:
+Create a distributable ZIP:
 
 .\gradlew.bat buildPlugin
 Output:
@@ -30,18 +30,18 @@ build/
 └── distributions/
     └── PluginJson-1.0.0.zip
     
-# Verifica compatibilità
+# Compatibility Verification
 
-Configurazione progetto:
+Verify project configuration:
 .\gradlew.bat verifyPluginProjectConfiguration
 
-Verifica struttura:
+Verify project structure:
 .\gradlew.bat verifyPluginStructure
 
 Plugin Verifier:
 .\gradlew.bat verifyPlugin
-Risultato attuale:
 
-# Compatibilità
+Result:
+# Compatibility
 IntelliJ IDEA 2025.1+
-Java 21 per compilare il plugin
+Java 21 to compile the plugin
