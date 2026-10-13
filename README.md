@@ -6,7 +6,7 @@ An IntelliJ IDEA plugin that exports the runtime value of a Java variable to JSO
 
 Reads a Java variable from the debugger, retrieves the actual values stored in the JVM, and recursively traverses nested objects to generate a formatted JSON file, which is saved in the project's JSON folder.
 
-# USage
+# Usage
 1) Place a breakpoint after the object has been initialized.
 2) Start the application in Debug mode.
 3) Place the cursor over a Java variable or select it.
