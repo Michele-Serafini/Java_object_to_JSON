@@ -1,0 +1,36 @@
+<idea-plugin>
+
+  <id>dev.micheleserafini.runtimeobjecttojson</id>
+
+  <name>Runtime Object to JSON</name>
+
+  <vendor>Michele Serafini</vendor>
+
+  <description><![CDATA[
+        Exports the runtime value of a Java variable to a formatted JSON file
+        while the debugger is suspended.
+        <br><br>
+        Place the cursor on a Java variable, right-click in the editor,
+        and select <b>Export Object to JSON</b>.
+    ]]></description>
+
+  <depends>com.intellij.modules.platform</depends>
+  <depends>com.intellij.modules.java</depends>
+
+  <actions>
+
+    <action
+      id="dev.micheleserafini.runtimeobjecttojson.ExportRuntimeFromEditor"
+      class="pluginjson.ExportRuntimeFromEditorAction"
+      text="Export Object to JSON"
+      description="Exports the runtime value of a Java variable to JSON">
+
+      <add-to-group
+        group-id="EditorPopupMenu"
+        anchor="first"/>
+
+    </action>
+
+  </actions>
+
+</idea-plugin>
